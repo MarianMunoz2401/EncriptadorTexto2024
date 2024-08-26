@@ -13,23 +13,24 @@ Bienvenido a mi proyecto de **Encriptador de Textos**. Este proyecto es una apli
 
 ---
 
+## 🎨 Diseño
+La aplicación está diseñada para ser simple y clara, utilizando un diseño adaptable para diferentes dispositivos. Incluye:
+
+- **HTML para la estructura.
+- **CSS para el estilo, incluyendo un reset CSS básico para asegurar una visualización consistente.
+- **JavaScript para la funcionalidad de encriptación y desencriptación.
+
+## 📸 Capturas de Pantalla
+
+## 🚀 Contribuciones
+- **Las contribuciones son bienvenidas.
+
+## 📧 Contacto
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
+
 ## 🛠️ Instalación
 
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/MarianMunoz2401/Encriptador2024.git
 
-
-
-
-
-### Personalización de Títulos en Markdown
-
-Markdown estándar no permite centrar texto, cambiar colores o tamaños directamente. Sin embargo, puedes usar HTML dentro de Markdown para lograr estos efectos:
-
-```markdown
-<h1 align="center" style="color: #FF5733;">🚀 Encriptador de Textos</h1>
-
-<h2 align="center" style="color: #33C1FF;">🌟 Características</h2>
-
-<h3 align="center" style="color: #FF33B2;">🛠️ Instalación</h3>
