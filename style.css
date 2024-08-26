@@ -218,32 +218,41 @@ footer {
     }
 
 /* Para pantallas entre 480px y 800px */
-@media (min-width: 480px) and (max-width: 800px) {
+@media screen and(min-width: 480px) and (max-width: 800px) {
     .contenido {
-        width: 100%;
-        margin: auto;
+        width: auto;
+        margin: auto 40px;
         grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
     }
 
     .contenido_izq {
-        width: 100%;
+        width: auto;
     }
 
     .input-text {
-        width: 100%;
+        width: auto;
     }
 
     .button-group {
-        flex-direction: column;
+         justify-content: space-around;
     }
 
-    .btn-encrypt, .btn-decrypt, .btn-copy {
-        width: 100%;
+    .btn-encrypt, .btn-decrypt {
+        width: 45%;
     }
 
     .contenido_der {
         height: auto;
         margin-top: 16px;
         padding: 16px;
+    }
+    
+    .muneco{
+        display: none;
+    }
+
+    .textos-derecha{
+        margin: 0;
     }
 }
