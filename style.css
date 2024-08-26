@@ -206,48 +206,81 @@ footer {
 
 /* Responsive Design */
 
-@media (min-width: 480px) and (max-width: 800px) {
-    .contenido{
-        width: auto;
-        margin: auto 40px;
+/* Ajustes generales para la vista móvil */
+@media (max-width: 480px) {
+    .contenido {
+        width: 100%;
+        margin: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: 75% auto;
+        grid-template-rows: auto;
     }
 
-    .contenido_izq{
-        width: auto;
-    }
-    .input-Text{
-        width: auto;
-    }
-
-    .botones-izquierda{
-        justify-content: space-around;
-    }
-
-    .btn-encrypt, .btn-descrypt{
-        width: 45%;
-    }
-
-    .contenido_der{
-        height: 90%;
-        margin-top: 64px;
-    }
-
-    .muñeco{
-        display: none;
-    }
-
-    .textos-derecha{
-        margin: 0;
-    }
-
-    .btn-encrypt, .btn-descrypt{
-        max-width: 100%;
+    .contenido_izq {
         width: 100%;
     }
 
-    .textos-derecha{
+    .input-text {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .btn-encrypt, .btn-decrypt, .btn-copy {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .contenido_der {
+        height: auto;
+        margin-top: 16px;
+        padding: 16px;
+    }
+
+    .muneco {
+        width: 80%;
+    }
+
+    .texto-info {
+        font-size: 18px;
+        height: auto;
+    }
+
+    .hide {
+        display: none;
+    }
+}
+
+/* Para pantallas entre 480px y 800px */
+@media (min-width: 480px) and (max-width: 800px) {
+    .contenido {
+        width: 100%;
         margin: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .contenido_izq {
+        width: 100%;
+    }
+
+    .input-text {
+        width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .btn-encrypt, .btn-decrypt, .btn-copy {
+        width: 100%;
+    }
+
+    .contenido_der {
+        height: auto;
+        margin-top: 16px;
+        padding: 16px;
     }
 }
