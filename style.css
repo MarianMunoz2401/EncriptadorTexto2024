@@ -218,16 +218,17 @@ footer {
     }
 
 /* Para pantallas entre 480px y 800px */
-@media screen and(min-width: 480px) and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .contenido {
         width: auto;
         margin: auto 40px;
         grid-template-columns: 1fr;
-        grid-template-rows: 75% auto;
+        justify-items: center;
     }
 
     .contenido_izq {
         width: auto;
+        margin-bottom: 20px;
     }
 
     .input-text {
