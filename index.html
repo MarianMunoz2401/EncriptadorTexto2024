@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="logo_alura" src="./Imagenes/Logo.png" alt="Logo de Alura">
+        </div>
+    </header>
+    <main>
+        <div class="contenido">
+            <div class="contenido_izq">
+                <textarea cols="10" rows="15" id="inputText" class="input-text" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="contenido_izq_abajo">
+                    <img src="./Imagenes/exclamacion.png" alt="Imagen de exclamación">
+                    <p class="advertencia">Solo letras minúsculas, sin acentos, ni carácteres especiales</p>
+                    <div class="button-group">
+                        <button id="encryptBtn" class="btn-encrypt">Encriptar</button>
+                        <button id="decryptBtn" class="btn-decrypt">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div id="ajusteContenido" class="contenido_der">
+                <img id="imgDer" class="muneco" src="./Imagenes/Muñeco.png" alt="Imagen del muñeco">
+                <p id="mensajeAdv" class="mensaje no-message">Ningún mensaje fue encontrado</p>
+                <textarea cols="10" rows="10" id="txtInfo" class="texto-info" readonly>Ingrese el texto que desee encriptar o desencriptar.</textarea>
+                <button id="copyBtn" class="btn-copy hide">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="redes__sociales">
+                <a href="https://www.instagram.com/marian_munoz_24/" target="_blank" class="social-link">
+                    <img src="./Imagenes/instagram.jpeg" alt="Instagram">
+                </a>
+                <a href="https://www.Github.com/MarianMunoz2401/" target="_blank" class="social-link">
+                    <img src="./Imagenes/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.LinkedIn.com/in/marian-munoz/" target="_blank" class="social-link">
+                    <img src="./Imagenes/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <p class="desarrollado-por">&copy; 2024  Desarrollado por Marian Muñoz</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<!--         <textarea id="outputText" placeholder="Texto encriptado/desencriptado" readonly></textarea> -->  

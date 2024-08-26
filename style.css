@@ -1,0 +1,253 @@
+:root {
+    --color-azul: #0A3871;
+    --color-gray: #D8DFE8;
+    --color-body:#F3F5FC;
+    --color-footer:#AAB2D5;
+
+}
+
+
+
+body {
+    font-family: "Inter" sans-serif;
+    background: var(--color-body);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.logo_alura {
+    margin-top: 40px;
+}
+
+.contenido {
+    width: 80%;
+    margin: auto 40px auto auto;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    min-height: calc(100vh - 91px - 72px);
+    align-items: end;
+}
+
+.contenido_izq {
+    height: 90%;
+    width: calc(100% - 80px);;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.input-text {
+    font-family: "Inter", sans-serif;
+    width: 80%;
+    font-size: 32px;
+    color: var(--color-azul);
+    background: none;
+    resize: none;
+    border: none;
+    outline: none;
+   
+}
+.ingreso-texto::placeholder {
+    color: var(--color-azul);
+}
+
+.contenido_izq_abajo {
+    padding-bottom: 32px;
+}
+
+.advertencia {
+    display: inline-block;
+    color: #495057;
+    font-size: 24px;
+}
+
+.button-group {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+button:hover {
+    transform: translate(0, -2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-encrypt, .btn-decrypt, .btn-copy{
+    max-width: 328px;
+    width: 45%;
+    height: 67px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid var(--color-azul);
+    border-radius: 24px;
+}
+
+.btn-encrypt{
+    background-color: var(--color-azul);
+    color:  #FFFFFF;
+}
+
+.btn-decrypt{
+    background-color: var(--color-gray);
+    color: var(--color-azul);
+}
+
+.contenido_der {
+    overflow: auto;
+    background-color: #FFFFFF;
+    height: calc(100% + 48px);
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.contenido_der.ajustarContenido {
+    justify-content: space-between;
+}
+
+.muneco {
+    width: 100%;
+}
+
+.mensaje{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #343A40;
+}
+
+.ajustar {
+    justify-content: space-between;
+}
+
+
+.texto-info{
+    text-align: center;
+    font-size: 16px;
+    color: #495057;
+    background: none;
+    resize: none;
+    border: none;
+    outline: none;
+    overflow: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.texto-info[readonly] {
+    cursor: auto;
+}
+
+.texto-info.ajustar{
+    height: 90%;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.btn-copy {
+    width: 100%;
+    background: transparent;
+    color: var(--color-azul);
+}
+
+.hide{
+    display: none;
+}
+
+
+footer {
+    background-color: var(--color-footer);
+    padding: 20px 0;
+    text-align: center;
+    color: var(--color-azul);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social-link img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.social-link img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.desarrollado-por {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+/* Responsive Design */
+
+@media (min-width: 480px) and (max-width: 800px) {
+    .contenido{
+        width: auto;
+        margin: auto 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+    }
+
+    .contenido_izq{
+        width: auto;
+    }
+    .input-Text{
+        width: auto;
+    }
+
+    .botones-izquierda{
+        justify-content: space-around;
+    }
+
+    .btn-encrypt, .btn-descrypt{
+        width: 45%;
+    }
+
+    .contenido_der{
+        height: 90%;
+        margin-top: 64px;
+    }
+
+    .muñeco{
+        display: none;
+    }
+
+    .textos-derecha{
+        margin: 0;
+    }
+
+    .btn-encrypt, .btn-descrypt{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .textos-derecha{
+        margin: auto;
+    }
+}
